@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresoActivity">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="205dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNum"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="TextViewm"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTituloRegistro"
+        android:layout_width="207dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="48dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Formulario de Ingreso al Laboratorio de Computación"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <EditText
+        android:id="@+id/editTxtGrupoRiesgo"
+        android:layout_width="408dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="440dp"
+        android:ems="10"
+        android:hint="¿Eres grupo de riesgo? Si/No"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtVacuna"
+        app:layout_constraintVertical_bias="0.704" />
+
+    <EditText
+        android:id="@+id/editTxtVacuna"
+        android:layout_width="408dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="360dp"
+        android:ems="10"
+        android:hint="¿Te vacunaste contra el covid-19? Si / No"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGrupoRiesgo" />
+
+    <EditText
+        android:id="@+id/editTxtDosis"
+        android:layout_width="409dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:hint="¿Cuantas dosis tienes?"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtVacuna" />
+
+    <ImageView
+        android:id="@+id/imgLogoUser"
+        android:layout_width="118dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toEndOf="@+id/txtTituloRegistro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
